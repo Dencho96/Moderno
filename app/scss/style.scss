@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.box {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.test {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+    &__link {
+        color: #12f;
+    }
+}
+
+body {
+    display: flex;
+    background-color: blue;
+    transition: all .3s;
+}
