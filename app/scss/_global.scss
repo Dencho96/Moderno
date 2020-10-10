@@ -23,7 +23,6 @@ li {
 
 .lnr {
     font-family: 'Linearicons';
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -63,7 +62,7 @@ body {
 .title {
     text-align: center;
     color: $bg;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 30px;
