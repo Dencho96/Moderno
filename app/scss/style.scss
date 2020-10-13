@@ -3,6 +3,10 @@
 @import 'global';
 
 // start header
+.header{
+    background-color: white;
+}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -118,6 +122,7 @@
 }
 
 .busket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -137,7 +142,6 @@
 
 
 .user {
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -206,7 +210,8 @@
     border: 1px solid #e0e0e0;
     height: 0;
     overflow: hidden;
-   
+    z-index: 1;
+
 }
 
 .user__box,
@@ -234,14 +239,16 @@
     margin-left: 15px;
 
     &:hover {
-        .header__circle::before{
+        .header__circle::before {
             color: $bg;
         }
+
         .circle__menu {
             overflow: visible;
             height: 100%;
         }
-        .circle__item{
+
+        .circle__item {
             padding: 23px 23px;
             border-width: 1px;
         }
@@ -260,7 +267,8 @@
     width: 269px;
     transition: all 0.3s;
     position: relative;
-    &::before{
+
+    &::before {
         position: absolute;
         top: 27px;
         right: 28px;
@@ -288,7 +296,7 @@
     font-size: 16px;
 }
 
-.circle__info-date{
+.circle__info-date {
     color: #707070;
     font-size: 10px;
 }
@@ -328,20 +336,26 @@
 }
 
 .notification__menu,
-.message__menu{
-    .circle__images{
+.message__menu {
+    .circle__images {
         margin-right: 20px;
         width: 48px;
         height: 48px;
         border-radius: 50%;
     }
-    .circle__info{
+
+    .circle__info {
         line-height: 18px;
     }
 }
 
-.icons-color::before{
+.icons-color::before {
     color: $tomato;
+}
+
+.header__btn-menu,
+.menu__btn {
+    display: none;
 }
 
 // end header
@@ -1361,3 +1375,6 @@ button.icon-unsorted {
 }
 
 //end product-page
+
+
+@import 'media'
