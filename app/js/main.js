@@ -20,17 +20,23 @@ $(function() {
                     infinite: true,
                     dots: true,
                 },
+                
+                
+            },
+            {
                 breakpoint: 1441,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 },
+            },
+            {
                 breakpoint: 801,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
-            },
+            }
         ]
     });
 
